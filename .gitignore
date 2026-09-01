@@ -1,0 +1,28 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+*.tfvars
+
+# Terraform lock file
+# Keep this file committed so provider versions are reproducible
+# .terraform.lock.hcl
+
+# Secrets
+*.pem
+*.key
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
