@@ -1,37 +1,32 @@
 variable "project_name" {
-  description = "Project name"
+  description = "aws-ha-web-app"
   type        = string
 }
 
 variable "environment" {
-  description = "Environment name"
+  description = "Deployment environment"
   type        = string
 }
 
 variable "vpc_cidr" {
-  description = "VPC CIDR block"
+  description = "CIDR block for the VPC"
   type        = string
+  
 }
 
+#Subnets
+
 variable "availability_zones" {
-  description = "Availability Zones"
+  description = "Availability Zones to use"
   type        = list(string)
 }
 
 variable "public_subnet_cidrs" {
-  description = "Public subnet CIDRs"
+  description = "CIDR blocks for public subnets"
   type        = list(string)
 }
 
 variable "private_subnet_cidrs" {
-  description = "Private subnet CIDRs"
+  description = "CIDR blocks for private subnets"
   type        = list(string)
-}
-
-
-
-variable "aws_region" {
-  description = "AWS region"
-  type        = string
-  default     = "eu-west-2"
 }
